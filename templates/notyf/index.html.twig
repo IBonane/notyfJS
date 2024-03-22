@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <nav>
+        <ul>
+            <li><strong>Notyf</strong></li>
+        </ul>
+        <ul>
+            <li><button class="btn-notyf" type="button" btn-data-text="success" role='button'>Success</button></li>
+            <li><button class="btn-notyf" type="button" btn-data-text="info" role='button'>Info</button></li>
+            <li><button class="btn-notyf" type="button" btn-data-text="warning" role='button'>Warning</button></li>
+            <li><button class="btn-notyf" type="button" btn-data-text="error" role='button'>Error</button></li>
+        </ul>
+    </nav>
+
+    <article>
+        <h1>{{notyf}}</h1>
+    </article>
+{% endblock %}
